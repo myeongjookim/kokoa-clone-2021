@@ -6,9 +6,19 @@
     margin-top: -10px;
 }
 #friends-display-link i {
-    color: rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+}
+#friends-display-link {
+    background-color: 
+    #828080
+    ;
+    color: aliceblue;
+}
+body {
+    background-color: #9E1A1A;
 }
 .friends-screen{
+    color: aliceblue;
     padding: 0px 15px;
 }
 .friends-screen__channel {
@@ -20,7 +30,8 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+   
 }
 @keyframes hideSplashScreen {
     from {
@@ -32,15 +43,13 @@
     }
 }
 #splash-screen {
-    background-color: var(--yellow);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/7/7a/ST3LambertPoster.png");
+    background-size: cover;
+    background-color: #9E1A1A;
     position: absolute;
     height: 100vh;
     width: 100vw;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 132px;
+    top: 0px;
     animation: hideSplashScreen 0.4s ease-in-out forwards;
     animation-delay: 2s;
 }

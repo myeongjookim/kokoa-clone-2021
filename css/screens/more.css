@@ -9,6 +9,7 @@
     
 }
 .more-suggestions__title{
+    color: aliceblue;
     margin-bottom: 30px;
 }
 .more-suggestions__icons {
@@ -37,4 +38,7 @@
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+.more-suggestions__icon-text {
+    color: aliceblue;
 }
