@@ -34,8 +34,12 @@
     align-items: center;
     
 }
-
+.open-post__coulmn {
+    margin-bottom: 90px;
+   padding: 10px 5px;
+}
 .open-post__title {
+    color: aliceblue;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -45,7 +49,8 @@
     opacity: 0.6;
 }
 .open-post__members{
-    
+    display: flex;
+    align-items: center;
     margin-top: 7px;
 }
 .open-post__members img {
@@ -62,7 +67,7 @@
     width: 2px ;
     height: 15px;
     background-color: aliceblue;
-    margin: 0 5px;
+    margin: 0px 10px;
 }
 .open-post__member-status {
     color: aliceblue;
@@ -89,4 +94,22 @@
 }
 .open-post__heart-count span {
     margin-left: 3px;
+}
+@keyframes heartBeat {
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(2);
+    }   
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+.open-post__heart-count:hover i{
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
